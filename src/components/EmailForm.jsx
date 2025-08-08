@@ -16,7 +16,7 @@ const EmailForm = () => {
     setStatus('Generating email...');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/email/generate', { prompt });
+      const res = await axios.post('https://ai-email-sender-oheb.vercel.app/api/email/generate', { prompt });
 
       // If response is an array of suggestions
       const emails = Array.isArray(res.data.email) ? res.data.email : [res.data.email];
@@ -34,7 +34,7 @@ const EmailForm = () => {
 
     setStatus('Sending email...');
     try {
-      const res = await axios.post('http://localhost:5000/api/email/send', {
+      const res = await axios.post('https://ai-email-sender-oheb.vercel.app/api/email/send', {
         recipients: recipients.split(',').map((e) => e.trim()),
         subject,
         body: emailBody,
