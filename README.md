@@ -1,2 +1,2 @@
-AI_EMAIL DASHBOARD:
-(https://github.com/user-attachments/assets/943a4230-7b9d-451a-8b17-d3ef38710b4c)
+![dashboard](https://github.com/user-attachments/assets/e24fb701-19d1-494b-b20a-029c3617f10d)
+
